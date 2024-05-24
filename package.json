@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Load once use it anywhere across your application. this library helps you to save the state of key and value pair",
   "main": "dist/index.js",
+  "git": "https://github.com/mistyunicorn/env-json-cache"
   "keywords": [
     "env",
     "cache",
