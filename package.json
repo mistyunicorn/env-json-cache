@@ -1,0 +1,29 @@
+{
+  "name": "env-json-cache",
+  "version": "1.0.0",
+  "description": "Load once use it anywhere across your application. this library helps you to save the state of key and value pair",
+  "main": "dist/index.js",
+  "keywords": [
+    "env",
+    "cache",
+    "envprovider",
+    "process-cache",
+    "json-cache",
+    "singleton",
+    "node-cache",
+    "lightweight",
+    "typescript"
+  ],
+  "author": "BK",
+  "license": "ISC",
+  "dependencies": {
+    "node-cache": "^5.1.2",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12"
+  }
+}
