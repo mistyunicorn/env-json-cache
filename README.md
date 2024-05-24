@@ -82,9 +82,6 @@ env.loadJson({JSON_TEST_KEY1:"value", JSON_TEST_KEY2:"value2"})
 // to set key and value 
 env.set("TEST_KEY","TEST_VALUE")
 
-//to get the value from cache
-const value = env.get("JSON_TEST_KEY1")
-
 ```
 
 ```js
