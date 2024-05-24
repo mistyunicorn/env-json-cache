@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Load once use it anywhere across your application. this library helps you to save the state of key and value pair",
   "main": "dist/index.js",
-  "git": "https://github.com/mistyunicorn/env-json-cache"
+  "git": "https://github.com/mistyunicorn/env-json-cache",
   "keywords": [
     "env",
     "cache",
@@ -18,13 +18,13 @@
   "author": "BK",
   "license": "ISC",
   "dependencies": {
-    "node-cache": "^5.1.2",
-    "typescript": "^5.4.5"
+    "node-cache": "^5.1.2"
   },
   "scripts": {
     "build": "tsc"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12"
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
   }
 }
