@@ -3,7 +3,7 @@
 ## Introduction:
 
 A lightweight library with a singleton caching module that allows for the manipulation of keys and values pairs through set, get, and delete functions. 
-By importing the library, an additional function called loadJson makes it possible to load the JSON value to cache and utilize across application files.
+By importing the library, an additional function called loadJson and loadJsonFile makes it possible to load the JSON value to cache and utilize across application files.
 
 MOTO: Load once and use it wherever in your program. This library allows you to store the state of a key-value pair.
 
