@@ -1,6 +1,6 @@
 {
   "name": "env-json-cache",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Load once and use it anywhere in your application. This library allows you to store the state of a key-value pair.(Json value can be loaded)",
   "main": "dist/env-json-cache.js",
   "repository": {
