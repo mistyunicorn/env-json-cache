@@ -3,14 +3,14 @@
 A lightweight library with a singleton caching module that allows for the manipulation of keys and values pairs through set, get, and delete functions. 
 By importing the library, an additional function called loadJson and loadJsonFile makes it possible to load the JSON value to cache and utilize across application files.
 
-MOTO: Load once and use it wherever in your program. This library allows you to store the state of a key-value pair.
+**MOTO: Load once and use it anywhere in your application. This library allows you to store the state of a key-value pair.**
 
 ## Install
 ``npm i env-json-cache``
 
 ## How to use ?
 
-Here is the singleton object library, user can set get and delete the cache, also they can pass a json object to load.
+env-json-cache is the singleton object library, user can set get and delete the cache, also they can pass a json object to load.
 By deafult all the process.env value will be loaded. if user wants to load JSON value they can use "loadJson(data)" or loadJsonFile(filepath) function to push the data to cache.
 
 
@@ -45,7 +45,7 @@ const value = env.get("TEST_KEY")
 
 //env.set("TEST_DEFAULT_VALUE",true)
 
-// get value from cache if the value is not present in cache deafult value will return 
+// get the value if the value is not present default value will return, i.e, second parameter
 if(env.get("TEST_DEFAULT_VALUE",false)){
     console.log("Hey am here")
 }
@@ -56,26 +56,19 @@ if(env.get("TEST_DEFAULT_VALUE",false)){
 ```js
 const env = require('env-json-cache')
 
-// to set key and value 
-env.set("TEST_KEY","TEST_VALUE",1000) // third parameter is TTL
-
-//to get the value from cache
-const value = env.get("TEST_KEY")
-
 // function to delete the key value pair
 env.delete("TEST_KEY")
 
-// get value from cache if the value is not present in cache deafult value will return 
-if(env.has("TEST_KEY",false)){
+// returns boolean value if the key is exist
+if(env.has("TEST_KEY")){
     console.log("Hey i have a value")
 }
 
 ```
 
 ### Example of loadJson and loadJsonFile
-
-```json
 // test.json
+```json
 {
     "EXAMPLE1": "TEST"
 }

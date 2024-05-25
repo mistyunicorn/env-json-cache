@@ -1,7 +1,7 @@
 {
   "name": "env-json-cache",
-  "version": "1.0.2",
-  "description": "Load once and use it wherever in your program. This library allows you to store the state of a key-value pair.",
+  "version": "1.0.3",
+  "description": "Load once and use it anywhere in your application. This library allows you to store the state of a key-value pair.(Json value can be loaded)",
   "main": "dist/env-json-cache.js",
   "repository": {
     "type": "git",
@@ -10,13 +10,15 @@
   "keywords": [
     "env",
     "cache",
-    "envprovider",
     "process-cache",
     "json-cache",
     "singleton",
     "node-cache",
     "lightweight",
-    "typescript"
+    "typescript",
+    "json",
+    "environment",
+    "env-json-cache"
   ],
   "author": "umberla-company",
   "license": "ISC",
