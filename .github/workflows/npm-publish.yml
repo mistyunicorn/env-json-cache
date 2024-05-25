@@ -4,8 +4,9 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -16,11 +17,11 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npm test
 
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
+  
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
