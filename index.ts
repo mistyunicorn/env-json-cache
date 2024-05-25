@@ -1,4 +1,6 @@
 import * as NodeCache from "node-cache";
+import * as fs from "fs"
+import * as path from "path"
 
 class EnvCache {
     private myCache = new NodeCache();
@@ -10,7 +12,8 @@ class EnvCache {
             this.myCache.set(key, env[key])
         }
     }
-    loadJson(data, log = console) {
+
+    loadJson(data, log?) {
         try {
             let jsonData
             this.log = log
@@ -24,8 +27,29 @@ class EnvCache {
         }
     }
 
-    set(key: string, value: string | object | boolean | number) {
-        this.myCache.set(key, value)
+    loadJsonFile(file: string, log?) {
+        try {
+            if (!fs.existsSync(file)) {
+                this.log.info(`File not exist ${file}`)
+                return
+            }
+            if (!(path.extname(file) == ".json")) {
+                this.log.info(`Accepted file type is json recived ${path.extname(file)}`)
+                return
+            }
+            let data = fs.readFileSync(file, 'utf8')
+            let jsonData = JSON.parse(data.toString());
+            for (var _i = 0, _a = Object.keys(jsonData); _i < _a.length; _i++) {
+                var key = _a[_i];
+                this.myCache.set(key, jsonData[key]);
+            }
+        } catch (e) {
+            this.log.info("Unexpected error while caching keys from json file" + e)
+        }
+    }
+
+    set(key: string, value: string | object | boolean | number, ttl: number = undefined) {
+        return this.myCache.set(key, value, ttl)
     }
     get(key: string, defaultValue: string | object | boolean | number) {
         return this.myCache.get(key) ? this.myCache.get(key) : defaultValue

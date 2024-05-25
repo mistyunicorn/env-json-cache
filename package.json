@@ -18,7 +18,9 @@
   "author": "BK",
   "license": "ISC",
   "dependencies": {
-    "node-cache": "^5.1.2"
+    "fs": "^0.0.1-security",
+    "node-cache": "^5.1.2",
+    "path": "^0.12.7"
   },
   "scripts": {
     "build": "tsc"
