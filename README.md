@@ -2,10 +2,10 @@
 
 ## Introduction:
 
-Light weight library with a singleton caching module that has set, get and delete methods to play with keys and values pairs. 
-Additonal method like loadJson helps to load the json value to cache and use across application files just by importing the library
+A lightweight library with a singleton caching module that allows for the manipulation of keys and values pairs through set, get, and delete functions. 
+By importing the library, an additional function called loadJson makes it possible to load the JSON value to cache and utilize across application files.
 
-
+MOTO: Load once and use it wherever in your program. This library allows you to store the state of a key-value pair.
 
 ## Install
 ``npm i env-json-cache``
@@ -14,9 +14,6 @@ Additonal method like loadJson helps to load the json value to cache and use acr
 
 Here is the singleton object library, user can set get and delete the cache, also they can pass a json object to load.
 By deafult all the process.env value will be loaded. if user wants to load JSON value they can use "loadJson(data)" or loadJsonFile(filepath) function to push the data to cache.
-
-
-MOTO: Load once use it anywhere across your application. this library helps you to save the state of key and value pair
 
 
 ## Functions
