@@ -93,7 +93,7 @@ const env = require('env-json-cache')
 // to load json file in cache 
 env.loadJson({JSON_TEST_KEY1:"value", JSON_TEST_KEY2:"value2"}, console) //you can also pass logger as second parameter 
 
-// to load json data from json file 
+// to load json data from json file location internally uses fs to read the file
 env.loadJson("./test.json", console) //you can also pass logger as second parameter to print logs
 
 ```
