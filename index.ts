@@ -58,7 +58,7 @@ class EnvCache {
         return this.myCache.keys()
     }
     delete(key: string) {
-        this.myCache.del(key)
+        return this.myCache.del(key)
     }
     has(key: string) {
         return this.myCache.has(key)
