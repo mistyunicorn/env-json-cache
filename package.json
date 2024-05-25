@@ -1,11 +1,11 @@
 {
   "name": "env-json-cache",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Load once and use it wherever in your program. This library allows you to store the state of a key-value pair.",
   "main": "dist/env-json-cache.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mistyunicorn/env-json-cache"
+    "url": "git+https://github.com/mistyunicorn/env-json-cache.git"
   },
   "keywords": [
     "env",

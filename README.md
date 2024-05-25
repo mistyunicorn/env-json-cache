@@ -1,5 +1,3 @@
-# env-json-cache
-
 ## Introduction:
 
 A lightweight library with a singleton caching module that allows for the manipulation of keys and values pairs through set, get, and delete functions. 
