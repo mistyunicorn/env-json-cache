@@ -5,6 +5,8 @@ By importing the library, an additional function called loadJson and loadJsonFil
 
 **MOTO: Load once and use it anywhere in your application. This library allows you to store the state of a key-value pair.**
 
+Kindly share your feedback in this [issue](https://github.com/mistyunicorn/env-json-cache/issues/1)
+
 ## Install
 ``npm i env-json-cache``
 
